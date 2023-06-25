@@ -1,14 +1,20 @@
+
 # API Documentation
+**While starting
+
+    npm install
+
 
 ## Base URL
- - http://localhost:3000
+
+ http://localhost:3000
 
 
 ## Authentication
 
 To access the API endpoints, you need to include a valid API key in the request headers. The API key should be provided as follows:
 
-x-api-key: foo
+**x-api-key: foo**
 
 
 If an invalid or missing API key is provided, you will receive a 401 Unauthorized error.
