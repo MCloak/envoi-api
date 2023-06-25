@@ -59,7 +59,7 @@ app.put('/keys/:address/:key', (req, res) => {
   }
   addresses[address] = addresses[address].filter(k => k !== key);
   addresses[address].push(key + '-invalid');
-  res.status(200).json({ message: 'Anahtar geçersiz olarak işaretlendi.' });
+  res.status(200).json({ message: 'Key marked as invalid.' });
 });
 
 app.listen(3000, () => {
