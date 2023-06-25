@@ -58,7 +58,7 @@ app.put('/keys/:address/:key', (req, res) => {
     return;
   }
   addresses[address] = addresses[address].filter(k => k !== key);
-  addresses[address].push(key + '-invalid'); // Anahtarın sonuna "-invalid" ekleyin
+  addresses[address].push(key + '-invalid');
   res.status(200).json({ message: 'Anahtar geçersiz olarak işaretlendi.' });
 });
 
